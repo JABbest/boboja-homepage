@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: BOBOJA's Blog
 subtitle: ''
-description: ''
-keywords:
-author: John Doe
-language: en
-timezone: ''
+description: 'A CS student daily life, hard working for AI Engineer job.'
+keywords: 'AI, 算法工程师, 博客, 计算机科学, blog'
+author: BOBOJA
+language: zh-CN
+timezone: 'Asia/Shanghai'
 
 # URL
-## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+## Set my site url here.
+url: https://boboja.top
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -45,16 +45,48 @@ relative_link: false
 future: true
 syntax_highlighter: highlight.js
 highlight:
-  line_number: true
-  auto_detect: false
-  tab_replace: ''
-  wrap: true
-  hljs: false
+  enable: false
+  # line_number: true
+  # auto_detect: false
+  # tab_replace: ''
+  # wrap: true
+  # hljs: false
+
 prismjs:
   preprocess: true
   line_number: true
   tab_replace: ''
 
+prism_plugin:
+  mode: 'preprocess'
+  theme: 'tomorrow'
+  line_number: true
+  custom_css:
+
+search: 
+  path: search.xml
+  field: post
+
+permalink_pinyin:
+  enable: true
+  separator: '-' 
+
+wordCount:
+  enable: true # default true
+  postWordCount: true
+  min2read: true
+  totalCount: true
+
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: -date
+  
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)
@@ -96,7 +128,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: hexo-theme-matery
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment

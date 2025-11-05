@@ -4,7 +4,7 @@
 
 # Site
 title: BOBOJA's Blog
-subtitle: ''
+subtitle: "Welcome to BOBOJA's Planet!"
 description: 'A CS student daily life, hard working for AI Engineer job.'
 keywords: 'AI, 算法工程师, 博客, 计算机科学, blog'
 author: BOBOJA
@@ -86,7 +86,7 @@ feed:
   content_limit: 140
   content_limit_delim: ' '
   order_by: -date
-  
+
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)
